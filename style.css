@@ -1,0 +1,438 @@
+/* ESTILO GERAL  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #1E1E1E;
+    height: 100vh;
+
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.FLEX {
+    display: flex;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #3d378f;
+
+}
+
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+
+    padding: 40px 4%;
+
+}
+header .logo{
+    text-align: left;
+}
+
+header.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.FLEX {
+    display: flex;
+}
+
+header a {
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover {
+    color: #ffff;
+    transform: scale(1.06);
+}
+
+
+header nav ul {
+
+    list-style: none;
+    text-align: center;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+header .AN-Contato button {
+
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #7A63FF;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transform: scale(1.06)
+
+
+}
+
+header .AN-Contato butform, form .btn-enviar input:hover  {
+    box-shadow: 0px 0px 8px #3d378f;
+    transform: scale(1.05);
+}
+   
+   
+
+/* ESTILO DO TOPO DO SITE */
+
+.FLEX {
+    display: flex;
+}
+
+
+section.topo {
+    padding: 40px 4%;
+}
+
+section.topo.FLEX {
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+
+}
+
+.topo h1 {
+    color: #ffff;
+    font-size: 30px;
+    line-height: 40px;
+text-align: center;
+}
+
+.topo h1 span {
+    color: #3d378f;
+}
+
+.TXT p {
+    color: #FFFF;
+    margin: 40PX 0PX;
+}
+
+
+
+.topo .img-topo-do-site img {
+    position: relative;
+    animation: FLUTUAR 2s ease-in-out infinite alternate;
+}
+
+@keyframes FLUTUAR {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 12px;
+    }
+
+}
+
+/* ESTILO DE SOBRE*/
+
+.FLEX {
+    display: flex;
+}
+
+section.SOBRE {
+    padding: 40px 4%;
+}
+
+section.SOBRE .FLEX {
+    align-items: center;
+    gap: 60px;
+}
+
+.SOBRE .txt-sobre {
+    color: #FFFF;
+}
+
+.SOBRE .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+
+}
+
+.SOBRE .txt-sobre h2 span {
+    color: #7A63FF;
+    display: block;
+}
+
+.SOBRE .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+
+}
+
+.BTN-social button {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 80px;
+    border: none;
+    background-color: #7A63FF;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 6px;
+    transition: 2s;
+
+}
+
+section.SOBRE .IMG-SOBRE img {
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+
+/* ESTILO DO PORTIFÓLIO*/
+
+
+.FLEX {
+    display: flex;
+}
+
+section.portfólio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+section.portfólio .FLEX {
+    justify-content: space-around;
+    margin-top: 60px;
+
+
+}
+
+.img-port {
+
+    width: 360px;
+    height: 460px;
+    background-color: #7A63FF;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 7s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overley {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 09%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #FFFF;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.overley:hover {
+    opacity: 1;
+}
+
+
+section.portfólio h2 {
+    color: #ffff;
+    font-size: 46px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 0 39px;
+
+}
+
+section.portfólio h2 span {
+    color: #3d378f;
+
+}
+
+/* ESTILO DO FORMULÁRIO*/
+
+.FLEX {
+    display: flex;
+}
+
+section.Formulário h2 {
+    color: #ffff;
+    font-size: 46px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 0 39px;  
+}
+section.Formulário h2 span{
+    color: #3d378f;
+} 
+
+section.Formulário{
+padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+
+}
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #FFFF;
+    font-size: 18px;
+
+
+}
+form imput::placeholder{
+    color: #7A63FF;
+}
+form textarea{
+    resize: none;
+    max-height: 300px;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+
+}
+form .btn-enviar input{
+background-color: #7A63FF;
+    width:120px;
+    color: #1E1E1E;
+    font-weight: 700;
+    cursor: pointer;
+    transition:.2s ;
+}
+/* ESTILO DO FORMULÁRIO RODA PÉ*/
+
+footer{
+padding: 40px 4%;
+box-shadow: 0 0 40px 10px #ffffff1d;
+
+}
+footer .FLEX{
+    justify-content: space-between;
+    display: flex;
+}
+footer .line-footer{
+    padding: 20px 0;
+    
+}
+.borda{
+    border-top: 2px solid #7A63FF;
+
+}
+
+footer .line-footer p i{
+    color: #7A63FF;
+    font-size: 23px;
+}
+footer .line-footer p a{
+  color: #ffff;
+
+}
+
+/* MIDIA*/
+
+@media screen and (max-width: 1020px){
+.FLEX{
+    flex-direction: column;
+}
+.topo .FLEX{
+    flex-direction: column-reverse;
+
+}
+    .Menu-Desktop, .AN-Contato {
+        display: none;
+        
+    }
+
+    .topo h1 {
+        font-size: 30px;
+        
+    }
+    section.topo {
+        padding: 20px 8%;
+    }
+        section.SOBRE {
+            padding: 40px 5%;
+        }
+        section.portfólio {
+            padding: 80px 8%;
+        }
+            
+        .SOBRE .txt-sobre h2 {
+            font-size: 35px;
+            line-height: 35px;
+           text-align: center;
+        }
+        .BTN-social{
+            text-align: center;
+        }
+
+        section.SOBRE .IMG-SOBRE img {
+
+           width: 100%;
+        }
+        section.portfólio {
+            padding: 80px 8%;
+            
+        }
+        
+        .img-port {
+
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;
+           
+        }
+        section.portfólio .FLEX {
+          gap: 60px;
+        }
+           
+        footer .line-footer{
+           text-align: center;
+        }
+        
+       
+        
+           
+}
